@@ -8,13 +8,13 @@ const autoprefixer = require("gulp-autoprefixer");
 
 function javascript() {
   return src("src/*.js")
-    .pipe(
-      babel({
-        presets: ["@babel/env"],
-      })
-    )
+    // .pipe(
+    //   babel({
+    //     presets: ["@babel/env"],
+    //   })
+    // )
     .pipe(uglify({ mangle: { toplevel: true } })) // 压缩并字母化变量
-    .pipe(obfuscate({ replaceMethod: obfuscate.LOOK_OF_DISAPPROVAL })) // 混淆代码 默认参数LOOK_OF_DISAPPROVAL - ಠ_ಠ777; ZALGO - H͇̬͔̳̖̅̒ͥͧẸ̖͇͈͍̱̭̌͂͆͊_C͈OM̱̈́͛̈ͩ͐͊ͦEͨ̓̐S̬̘͍͕͔͊̆̑̈́̅
+    // .pipe(obfuscate({ replaceMethod: obfuscate.LOOK_OF_DISAPPROVAL })) // 混淆代码 默认参数LOOK_OF_DISAPPROVAL - ಠ_ಠ777; ZALGO - H͇̬͔̳̖̅̒ͥͧẸ̖͇͈͍̱̭̌͂͆͊_C͈OM̱̈́͛̈ͩ͐͊ͦEͨ̓̐S̬̘͍͕͔͊̆̑̈́̅
     .pipe(
       rename({
         dirname: "js", // 文件路径
