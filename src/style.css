@@ -1,0 +1,253 @@
+body {
+  width: 7.5rem;
+  margin: 0 auto;
+  position: relative;
+  background-color:#000;
+}
+
+.s1 {
+  background: url(../images/kv.png) no-repeat center 0 / cover;
+  width: 7.5rem;
+  height: 13.34rem;
+}
+
+.videoBox {
+  width: 100%;
+  height: 13.34rem;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.videoBox video {
+  width: 100%;
+    height: 100%;
+}
+
+.topbar {
+  display: block;
+  background: url(../images/topbar.png) no-repeat 0 0 / 100% 100%;
+  width: 7.5rem;
+  height: 1.22rem;
+  position: relative;
+  z-index: 2;
+}
+
+.topSlogan {
+  width: 5.61rem;
+  height: 0.31rem;
+  margin-top: 0.2rem;
+  margin-left: 1.05rem;
+  position: relative;
+  z-index: 2;
+}
+
+.downloadBox {
+  width: 6.36rem;
+  height: 0.92rem;
+  margin: 7.38rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+}
+
+.downloadBox a {
+  width: 2.99rem;
+  height: 0.92rem;
+}
+
+.downloadBox a img {
+  width: 100%;
+}
+
+.downloadBox .tips {
+  /* content: ""; */
+  background: url(../images/tips.png) no-repeat 0 0 / 100% 100%;
+  width: 1.84rem;
+  height: 1.22rem;
+  position: absolute;
+  top: -1.4rem;
+  left: -0.36rem;
+  transform-origin: center bottom;
+  animation: tipsAni 0.6s ease-in-out infinite;
+}
+
+@keyframes tipsAni {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.botSlogan {
+  display: block;
+  width: 7.17rem;
+  height: 2.32rem;
+  margin: 0 auto 0;
+  position: relative;
+  z-index: 2;
+}
+
+.arrow {
+  width: 0.5rem;
+  height: 0.42rem;
+  position: absolute;
+  bottom: 0.4rem;
+  left: 50%;
+  margin-left: -0.25rem;
+  z-index: 3;
+  animation: scrollAni 1s infinite;
+}
+
+@keyframes scrollAni {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0.4rem);
+    opacity: 0;
+  }
+}
+
+.s2 {
+  background: url(../images/bg.png) no-repeat 0 0 / 100% 100%;
+  width: 7.5rem;
+  height: 20.19rem;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.s2-title {
+  display: block;
+  width: 4.04rem;
+  height: 1.22rem;
+  margin: 0.95rem auto 0;
+}
+
+.s2-prizesBox {
+  background: url(../images/prizes.png) no-repeat 0 0 / 100% 100%;
+  width: 6.53rem;
+  height: 14.72rem;
+  margin-top: 0.4rem;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.reached {
+  display: none;
+  width: 2.3rem;
+  height: 2.02rem;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0rem;
+}
+
+.reached.cur {
+  display: block;
+}
+
+.reached img {
+  width: 100%;
+}
+
+.progress {
+  background-image: url(../images/progress.png);
+  background-size: 1.34rem 13.13rem;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 0.46rem;
+  height: 13.13rem;
+  position: absolute;
+  top: 2.3rem;
+  left: 0.26rem;
+}
+
+.progress.cur {
+  background-position-x: -0.91rem;
+}
+
+.config {
+  width: 5.44rem;
+  height: 2.05rem;
+  display: block;
+  margin: 0.4rem auto 0;
+}
+
+.footer {
+  margin: 0.3rem auto 0;
+  background-color: #010101;
+  position: relative;
+  padding-bottom: 2rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.footer img {
+  width: 100%;
+}
+
+.footer-protocol {
+  width: 100%;
+  margin: 0.2rem auto 0;
+}
+
+.footer-protocol a {
+  display: block;
+  color: #fff;
+  font-size: 0.24rem;
+  height: 0.58rem;
+  line-height: 0.5rem;
+  width: 92.5%;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  position: relative;
+}
+
+.footer-protocol a:first-child {
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.footer-protocol a span {
+  background: url(../images/footer-next.png) no-repeat 0 0 / 100% 100%;
+  display: inline-block;
+  width: 0.27rem;
+  height: 0.34rem;
+  position: absolute;
+  top: 0.14rem;
+}
+
+.footer-protocol a span:first-child {
+  right: 0.8rem;
+  opacity: 0.4;
+}
+
+.footer-protocol a span:nth-child(2) {
+  right: 0.65rem;
+  opacity: 0.8;
+}
+
+.footer-protocol a span:nth-child(3) {
+  right: 0.5rem;
+  opacity: 1;
+}
+
+.footer-company {
+  width: 3.74rem;
+  height: 0.74rem;
+  margin: 0.12rem auto 0;
+}
+
+.footer-info {
+  width: 6.51rem;
+  height: 1.36rem;
+  margin: .2rem auto;
+}
