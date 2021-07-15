@@ -89,6 +89,6 @@ function css() {
 const build = series(javascript, css);
 
 exports.css = css;
-exports.javascript = javascript;
+exports.js = javascript;
 exports.build = build;
 exports.default = build;
